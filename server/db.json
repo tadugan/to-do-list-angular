@@ -1,0 +1,6 @@
+{
+    "tasks": [
+        { "id": 1, "name": "Mow the Lawn", "description": "Use the lawnmower to cut the grass in the front and backyard.", "priority": "moderate"},
+        { "id": 2, "name": "Wash the Dishes", "description": "We have no clean dishes, so we need to run the dishwasher.", "priority": "high"}
+    ]
+}
