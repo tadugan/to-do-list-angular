@@ -1,8 +1,13 @@
-<p>
-  <mat-toolbar color="primary">
-    <button mat-icon-button>
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>ng To-Do List</span>
-  </mat-toolbar>
-</p>
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>ng To-Do List</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="app-side-nav">
+  <mat-sidenav opened mode="side" class="app-nav-link">
+    <nav class="app-nav-content">side content</nav>
+  </mat-sidenav>
+  <section class="app-main-content">Main Content Goes here</section>
+</mat-sidenav-container>
