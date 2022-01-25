@@ -11,6 +11,8 @@ export class TodosService {
   constructor(private http: HttpClient) { }
 
   all() {
-    return this.http.get(`${BASE_URL}tasks`);
+    let dbObject = this.http.get(`${BASE_URL}tasks`);
+    console.log('This is the object', dbObject);
+    return dbObject;
   }
 }

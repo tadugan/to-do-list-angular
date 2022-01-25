@@ -1,1 +1,13 @@
-<pre> {{ tasks | json }} </pre>
+<mat-card class="todo-display">
+  <mat-card-header>
+    <mat-card-title> To-Do </mat-card-title>
+  </mat-card-header>
+  <hr />
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let task of tasks">
+        <p>{{ task.name }}</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
