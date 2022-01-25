@@ -1,4 +1,12 @@
-<app-todo-display
-  [tasks]="tasks"
-  (selected)="selectTask($event)"
-></app-todo-display>
+<div class="todos-container">
+  <app-todo-display
+    class="todos-display"
+    [tasks]="tasks"
+    (selected)="selectTask($event)"
+  ></app-todo-display>
+
+  <app-todo-item-view
+    class="todos-item-view"
+    [selectedTask]="selectedTask"
+  ></app-todo-item-view>
+</div>

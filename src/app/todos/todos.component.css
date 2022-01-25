@@ -1,0 +1,12 @@
+.todos-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.todos-display {
+  width: 49%;
+}
+
+.todos-item-view {
+  width: 49%;
+}

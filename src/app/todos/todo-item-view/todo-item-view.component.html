@@ -1,1 +1,9 @@
-<p>todo-item-view works!</p>
+<mat-card class="todo-item-view-card">
+  <mat-card-header>
+    <mat-card-title> Selected To-Do</mat-card-title>
+  </mat-card-header>
+  <hr />
+  <mat-card-content>
+    <pre> {{ selectedTask | json }} </pre>
+  </mat-card-content>
+</mat-card>

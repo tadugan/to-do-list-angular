@@ -1,9 +1,8 @@
-/* TODO: */
-.todo-display {
-  min-height: 400px;
-}
-
 mat-list-item:hover {
   cursor: pointer;
   background: whitesmoke;
+}
+
+.todo-display-card {
+  min-height: 400px;
 }
