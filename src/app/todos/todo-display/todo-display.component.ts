@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./todo-display.component.css']
 })
 export class TodoDisplayComponent {
-  @Input() tasks: any[] = [{ id: 1, name: "Mow the Lawn", description: "Use the lawnmower to cut the grass in the front and backyard.", priority: "moderate"}];
+  @Input() tasks: any[] = [];
+  @Output() selected = new EventEmitter();
 }
 

@@ -23,6 +23,7 @@ export class TodosComponent implements OnInit {
   }
 
   selectTask(task: object) {
+    console.log('this is the selected task:', task); // TODO:
     this.selectedTask = task;
   }
 }

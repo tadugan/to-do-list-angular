@@ -8,12 +8,14 @@ import { MaterialModule } from './material.module';
 import { TodoDisplayComponent } from './todos/todo-display/todo-display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodosComponent } from './todos/todos.component';
+import { TodoItemViewComponent } from './todos/todo-item-view/todo-item-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoDisplayComponent,
-    TodosComponent
+    TodosComponent,
+    TodoItemViewComponent
   ],
   imports: [
     BrowserModule,

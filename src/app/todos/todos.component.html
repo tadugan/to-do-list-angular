@@ -1,1 +1,4 @@
-<app-todo-display [tasks]="tasks"></app-todo-display>
+<app-todo-display
+  [tasks]="tasks"
+  (selected)="selectTask($event)"
+></app-todo-display>

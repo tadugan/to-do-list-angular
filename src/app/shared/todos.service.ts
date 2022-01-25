@@ -12,7 +12,6 @@ export class TodosService {
 
   all() {
     let dbObject = this.http.get(`${BASE_URL}tasks`);
-    console.log('This is the object', dbObject);
     return dbObject;
   }
 }

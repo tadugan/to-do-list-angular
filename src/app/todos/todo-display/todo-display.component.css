@@ -2,3 +2,8 @@
 .todo-display {
   min-height: 400px;
 }
+
+mat-list-item:hover {
+  cursor: pointer;
+  background: whitesmoke;
+}
