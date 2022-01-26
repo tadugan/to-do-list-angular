@@ -1,13 +1,12 @@
 <mat-card class="todo-item-view-card">
   <mat-card-header>
-    <mat-card-title> Selected To-Do</mat-card-title>
+    <mat-card-title>
+      <span *ngIf="selectedTask.id; else noSelection">Selected Task</span>
+      <ng-template #noSelection>Please Select a Task</ng-template>
+    </mat-card-title>
   </mat-card-header>
   <hr />
-  <mat-card-content>
-    <!-- <pre> {{ selectedTask | json }} </pre> -->
-    <h3>{{ selectedTask.name }}</h3>
-    <p>{{ selectedTask.description }}</p>
-    <p>Priority: {{ selectedTask.priority }}</p>
-    <p>Is completed? {{ selectedTask.complete }}</p>
+  <mat-card-content *ngIf="selectedTask.id">
+    <app-todo-input></app-todo-input>
   </mat-card-content>
 </mat-card>

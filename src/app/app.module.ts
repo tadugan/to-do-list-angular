@@ -9,13 +9,15 @@ import { TodoDisplayComponent } from './todos/todo-display/todo-display.componen
 import { HttpClientModule } from '@angular/common/http';
 import { TodosComponent } from './todos/todos.component';
 import { TodoItemViewComponent } from './todos/todo-item-view/todo-item-view.component';
+import { TodoInputComponent } from './todos/todo-input/todo-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoDisplayComponent,
     TodosComponent,
-    TodoItemViewComponent
+    TodoItemViewComponent,
+    TodoInputComponent
   ],
   imports: [
     BrowserModule,
