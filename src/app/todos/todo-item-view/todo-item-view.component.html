@@ -4,6 +4,10 @@
   </mat-card-header>
   <hr />
   <mat-card-content>
-    <pre> {{ selectedTask | json }} </pre>
+    <!-- <pre> {{ selectedTask | json }} </pre> -->
+    <h3>{{ selectedTask.name }}</h3>
+    <p>{{ selectedTask.description }}</p>
+    <p>Priority: {{ selectedTask.priority }}</p>
+    <p>Is completed? {{ selectedTask.complete }}</p>
   </mat-card-content>
 </mat-card>

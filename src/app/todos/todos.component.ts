@@ -9,7 +9,7 @@ import { TodosService } from '../shared/todos.service';
 export class TodosComponent implements OnInit {
   tasks: any = null;
 
-  selectedTask: any = null;
+  selectedTask: any = {};
 
   constructor(private todosService: TodosService) { }
 
@@ -22,8 +22,9 @@ export class TodosComponent implements OnInit {
       .subscribe(tasks => this.tasks = tasks);
   }
 
-  selectTask(task: object) {
+  selectTask(task: any) {
     console.log('this is the selected task:', task); // TODO:
     this.selectedTask = task;
+    console.log('this is selectedTask', this.selectedTask); // TODO:
   }
 }

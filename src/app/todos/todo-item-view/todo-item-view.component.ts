@@ -6,6 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./todo-item-view.component.css']
 })
 export class TodoItemViewComponent{
-  @Input() selectedTask: object = {};
+  @Input() selectedTask: any = {};
 
 }
